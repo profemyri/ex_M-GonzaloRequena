@@ -49,6 +49,12 @@ button {
    cursor: pointer;
 }
 
+/* Efecto visual en botón "Enviar pedido" */
+button:hover {
+   background-color: white;
+   color: #0077b6;
+}
+
 /* Campo de texto "Instrucciones adicionales" */
 textarea::placeholder {
    color: #f4a261;
@@ -64,7 +70,7 @@ textarea::placeholder {
 
 /* Para cuadrar campos con opciones */
 .opciones {
-   display: flex;
+   display: block;
    flex-wrap: wrap;
    gap: 10px;
    align-items: center;
@@ -72,4 +78,39 @@ textarea::placeholder {
 
 .opciones input {
    margin-right: 5px;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+   background-color: #2c3e50;
+   color: #faf3e0;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+   background-color: #34495e;
+   color: #faf3e0;
+   border: 1px solid #faf3e0;
+}
+
+body.dark-mode button {
+   background-color: #faf3e0;
+   color: #2c3e50;
+}
+
+body.dark-mode h1,
+body.dark-mode h2 {
+   color: #f4a261;
+}
+
+body.dark-mode .opciones label {
+   color: #faf3e0;
+}
+
+/* Fondo del formulario en modo oscuro */
+body.dark-mode form {
+   background-color: #3b3b3b;
+   border: 1px solid #faf3e0;
+   color: #faf3e0;
 }
