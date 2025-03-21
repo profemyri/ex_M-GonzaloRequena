@@ -2,11 +2,93 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-   ..........
+    <title>Freiduría online</title>
     <link rel="stylesheet" href="ex_html-css-js.css">
 </head>
 <body>
-   ..........
+    <h1>¡¡Pide aquí tu rico pescaíto!!</h1>
+    <img src="pescado_frito.jpg" alt="Bandeja pescado frito" id="imagen-pescado">
+
+    <form id="formulario-pedido">
+        <fieldset>
+            <legend>Datos del cliente</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Introduce tu nombre">
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required placeholder="Introduce tus apellidos">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Introduce tu email">
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" minlength="18" required placeholder="Introduce tu dirección">
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" pattern="\d{9}" required placeholder="Introduce tu teléfono">
+
+            <label for="hora-entrega">Hora aproximada de entrega:</label>
+            <input type="time" id="hora-entrega" name="hora-entrega" required >
+        </fieldset>
+
+        <fieldset>
+            <legend>Pedido de pescado</legend>
+            <label for="tipo-pescado">Tipo de pescado:</label>
+            <select id="tipo-pescado" name="tipo-pescado" required>
+                <option value="calamares">Calamares</option>
+                <option value="adobo">Adobo</option>
+                <option value="boquerones">Boquerones</option>
+            </select>
+
+            <label for="raciones">Nº de raciones:</label>
+            <input type="number" id="raciones" name="raciones" min="1" max="5" required>
+
+            <fieldset>
+                <legend>Acompañamiento:</legend>
+                <label>
+                    <input type="checkbox" id="patatas" name="acompanhamiento" value="patatas">
+                    Patatas fritas
+                </label>
+                <label>
+                    <input type="checkbox" id="ensaladilla" name="acompanhamiento" value="ensaladilla">
+                    Ensaladilla
+                </label>
+                <label>
+                    <input type="checkbox" id="manzanilla" name="acompanhamiento" value="manzanilla">
+                    Botella de Manzanilla
+                </label>
+            </fieldset>
+        </fieldset>
+
+        <fieldset>
+            <legend>Método de pago</legend>
+            <label>
+                <input type="radio" id="efectivo" name="metodo-pago" value="efectivo" required>
+                Efectivo
+            </label>
+            <label>
+                <input type="radio" id="tarjeta" name="metodo-pago" value="tarjeta" required>
+                Tarjeta
+            </label>
+            <label>
+                <input type="radio" id="paypal" name="metodo-pago" value="paypal" required>
+                PayPal
+            </label>
+        </fieldset>
+
+        <label for="instrucciones">Instrucciones adicionales:</label>
+        <textarea id="instrucciones" name="instrucciones" maxlength="150"></textarea>
+
+        <button type="submit" id="enviar-pedido">Enviar Pedido</button>
+    </form>
+
+
+
+
+
+
+
+
 
     <script src="ex_html-css-js.js"></script>
 
