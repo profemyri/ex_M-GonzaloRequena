@@ -1,13 +1,75 @@
+/* Fondo del body */
 body {
-   ...........
+   background-color: #faf3e0;
+   color: #2c3e50;
+   font-family: Arial, sans-serif;
+   width: 800px;
+   margin: 0 auto;
 }
 
+/* Encabezado principal */
 h1 {
-   ...........
+   font-size: 32px;
+   color: #0077b6;
+   text-align: center;
 }
 
+/* Encabezados secundarios */
+h2 {
+   font-size: 24px;
+   color: #f4a261;
+}
+
+/* Imagen */
+img {
+   max-width: 100%;
+   display: block;
+   margin: 0 auto;
+}
+
+/* Formulario */
 form {
-   ...........
+   background-color: #ffffff;
+   padding: 20px;
+   border-radius: 10px;
 }
 
-............
+/* Campos del formulario */
+input, select, textarea {
+   border: 1px solid #eaeaea;
+   width: calc(100% - 40px);
+}
+
+/* Botón "Enviar pedido" */
+button {
+   background-color: #0077b6;
+   color: white;
+   text-align: center;
+   border: none;
+   cursor: pointer;
+}
+
+/* Campo de texto "Instrucciones adicionales" */
+textarea::placeholder {
+   color: #f4a261;
+}
+
+/* Estilo general */
+* {
+   margin: 15px;
+   padding: 10px;
+   border-radius: 10px;
+   box-sizing: border-box;
+}
+
+/* Para cuadrar campos con opciones */
+.opciones {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   align-items: center;
+}
+
+.opciones input {
+   margin-right: 5px;
+}
