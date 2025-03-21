@@ -108,7 +108,7 @@ function calcularPrecio() {
     }
 
     const total = (precioPescado * (parseInt(raciones.value) || 1)) + precioAcompanhamientos;
-    precioTotal.textContent = 'Precio total: ${total}€';
+    precioTotal.textContent = "Precio total: ${total}€";
 }
 
 // Actualizar precio en tiempo real
